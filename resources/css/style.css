@@ -1,0 +1,140 @@
+/* 
+
+Legenda:
+0. Global
+1. Navigation bar
+2. Header/Mission
+3. Featured
+4. Locations
+5. Contact
+6. Footer
+
+*/
+
+
+/* 0. Global */
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+main { 
+    max-inline-size: 1200px;
+    margin: 0 auto;
+}
+
+h4 {
+    margin: 0;
+    margin-block: 10px;
+}
+
+/* 1. Navigation bar */
+
+nav {
+    block-size: 69px;
+    inline-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    border-block-end: 1px solid seashell;
+}
+
+.logo {
+    block-size: 50px;
+    margin-inline-start: 10px;
+}
+
+.logo img {
+    block-size: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-inline: .5em;
+}
+
+nav ul li a {
+    color: seashell;
+}
+
+/* 2. Header/Mission */
+
+main > header {
+    background-image: url('../images/img-mission-background.jpg');
+    background-position: center;
+    background-size: cover;
+    block-size: 700px;
+    display: flex;
+    align-items: center;
+}
+
+#mission { 
+    background-color: black;
+    inline-size: 100%;
+}
+
+/* 3. Featured */
+
+.featured-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.featured-container img {
+    inline-size: 300px;
+    block-size: 200px;
+}
+
+/* 4. Locations */
+
+#locations {
+    background-image: url('../images/img-locations-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-block-size: 500px;
+}
+
+#locations h2 {
+    padding-block-start: 80px;
+    margin: 0;
+}
+
+.locations-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.locations-container > div {
+    background-color: black;
+    inline-size: 300px;
+    margin: 7.5px 20px;
+}
+
+/* 5. Contact */
+
+/* 6. Footer */
+
+footer {
+    text-align: left;
+    font-size: .7em;
+    margin-inline-start: 20px;
+}
